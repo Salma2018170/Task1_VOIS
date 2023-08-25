@@ -3,7 +3,7 @@
 1. Java 19 (or above)
 2. Intelli (or any IDE You can run on it java project)
 3. Maven 4.0.0(or any compatible version)
-  **website:**https://ksrtc.in/oprs-web/guest/home.do?h=1
+  **Website:** https://ksrtc.in/oprs-web/guest/home.do?h=1
    **Cover this senario**
 - Choose the following ((from "CHIKKAMAGALURU" to "BENGALURU”)) from the popular routes
 -	Choose the arrival date only 
