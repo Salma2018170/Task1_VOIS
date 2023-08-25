@@ -5,7 +5,8 @@
 3. Maven 4.0.0(or any compatible version)
  #  
 **Website:** https://ksrtc.in/oprs-web/guest/home.do?h=1
-**Cover this senario**
+#
+**Cover this scenario**
 - Choose the following ((from "CHIKKAMAGALURU" to "BENGALURU”)) from the popular routes
 -	Choose the arrival date only 
 -	Click “Search for bus”
