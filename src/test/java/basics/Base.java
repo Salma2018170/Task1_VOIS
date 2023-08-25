@@ -1,9 +1,6 @@
 package basics;
 
-import Pages.CartPage;
-import Pages.CategoryPage;
-import Pages.HomePage;
-import Pages.SubCategoryPage;
+import Pages.*;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,18 +14,18 @@ public class Base {
     protected CategoryPage categoryPage;
     protected SubCategoryPage subCategoryPage;
     protected CartPage cartPage;
+    protected TodaysDealsPage dealsPage;
 
     @BeforeClass
     public void setUp() throws InterruptedException {
         driver=new ChromeDriver();
         driver.manage().window().setSize(new Dimension(1024,768));
-        Thread.sleep(10000);
         driver.get("https://www.amazon.com/");
         homePage=new HomePage(driver);
     }
 
     @AfterClass
     public void tearDown(){
-            // driver.quit();
+        driver.quit();
     }
 }

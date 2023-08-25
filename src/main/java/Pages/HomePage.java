@@ -8,6 +8,8 @@ public class HomePage {
    private WebDriver driver;
    //Locator
     By searchField=By.id("twotabsearchtextbox");
+
+    By dealFieldButton=By.xpath("//a[@data-csa-c-content-id=\"nav_cs_gb\"]");
     public HomePage(WebDriver driver){
         this.driver=driver;
     }
@@ -19,5 +21,10 @@ public class HomePage {
                search.sendKeys(item);
                search.sendKeys(Keys.RETURN);
                return new CategoryPage(driver);
+    }
+
+    public TodaysDealsPage gotToDealPage(){
+        driver.findElement(dealFieldButton).click();
+        return new TodaysDealsPage(driver) ;
     }
 }
